@@ -1,0 +1,26 @@
+
+disabled_rules: # disable rule
+  - trailing_whitespace
+  - nesting
+  - function_parameter_count
+  - force_cast
+  - line_length
+  - type_name
+opt_in_rules: # added role
+  - control_statement
+  - empty_count
+  - trailing_newline
+  - colon
+  - comma
+excluded:
+  - Pods
+
+force_try:
+  severity: warning
+  
+# giới hạn
+function_body_length:
+  warning: 50
+  error: 60
+
+reporter: "xcode"
